@@ -4,13 +4,8 @@
   "details": {
     "intro": {
       "text": "intro.md",
-      "foreground": "foreground.sh",
-    },
-    "steps": [
-      {
-        "text": "step1.md"
-      }
-    ]
+      "foreground": "foreground.sh"
+    }
   },
   "backend": {
     "imageid": "ubuntu"
