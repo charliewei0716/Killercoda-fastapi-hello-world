@@ -4,15 +4,15 @@
   "details": {
     "intro": {
       "text": "intro/text.md"
-    }
-  },
-  "steps": [
-    {
-      "text": "text.md"
-    }
-  ],
-  "finish": {
-    "text": "finish/text.md"
+    },
+    "steps": [
+      {
+        "text": "text.md"
+      }
+    ],
+    "finish": {
+      "text": "finish/text.md"
+    },
   },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node"
