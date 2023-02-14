@@ -12,7 +12,7 @@
     ],
     "finish": {
       "text": "finish/text.md"
-    },
+    }
   },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node"
