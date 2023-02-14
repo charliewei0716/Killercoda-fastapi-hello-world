@@ -3,12 +3,12 @@
   "description": "使用 Docker 與 Kubernetes 佈署 FastAPI 範例",
   "details": {
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "foreground": "foreground.sh",
     },
     "steps": [
       {
-        "text": "step1.md",
-        "foreground": "foreground.sh",
+        "text": "step1.md"
       }
     ]
   },
