@@ -5,14 +5,14 @@
         "intro": {
             "title": "Intro",
             "text": "intro/text.md",
-            "foreground": "intro/foreground.sh",
+            "foreground": "intro/foreground.sh"
         }
     },
     "steps": [
         {
             "title": "Step1",
-            "text": "step1/text.md",
-        },
+            "text": "step1/text.md"
+        }
     ],
     "finish": {
         "title": "Finish",
