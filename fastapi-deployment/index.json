@@ -1,24 +1,21 @@
 {
-    "title": "FastAPI deployment",
-    "description": "使用 Docker 與 Kubernetes 佈署 FastAPI 範例",
-    "details": {
-        "intro": {
-            "title": "Intro",
-            "text": "intro/text.md",
-            "foreground": "intro/foreground.sh"
-        }
-    },
-    "steps": [
-        {
-            "title": "Step1",
-            "text": "step1/text.md"
-        }
-    ],
-    "finish": {
-        "title": "Finish",
-        "text": "finish/text.md"
-    },
-    "backend": {
-        "imageid": "kubernetes-kubeadm-1node"
+  "title": "FastAPI deployment",
+  "description": "使用 Docker 與 Kubernetes 佈署 FastAPI 範例",
+  "details": {
+    "intro": {
+      "text": "intro/text.md",
+      "foreground": "intro/foreground.sh"
     }
+  },
+  "steps": [
+    {
+      "text": "step1/text.md"
+    }
+  ],
+  "finish": {
+    "text": "finish/text.md"
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
 }
