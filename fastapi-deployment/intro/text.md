@@ -20,7 +20,7 @@
 <br>
 
 
-稍待 `git clone`{{}} 流程完成後，確認範例代碼已下載：
+稍待 `git clone`{{}} 流程完成，進入並確認範例代碼已下載：
 
 ```
 cd FastAPI-hello-world/
