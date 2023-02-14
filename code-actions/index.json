@@ -1,6 +1,6 @@
 {
-  "title": "Code Actions",
-  "description": "Let users copy or exec code blocks",
+  "title": "FastAPI deployment",
+  "description": "使用 Docker 與 Kubernetes 佈署 FastAPI 範例",
   "details": {
     "intro": {
       "text": "intro.md"
