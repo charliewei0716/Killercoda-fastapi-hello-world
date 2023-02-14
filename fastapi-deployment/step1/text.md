@@ -78,3 +78,7 @@ docker run -d -p 80:80 fastapi-helloworld:v1
 
 <br>
 
+完成後即可使用以下連結訪問使用 Docker 佈署的 FastAPI
+
+[訪問 FastAPI UI]({{TRAFFIC_HOST1_80}})
+
