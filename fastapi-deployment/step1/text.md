@@ -91,7 +91,7 @@ docker container ls
 
 即可透過連結訪問使用 Docker 佈署的 FastAPI
 
-[訪問 FastAPI UI]({{TRAFFIC_HOST1_80/docs}})
+[訪問 FastAPI UI]({{TRAFFIC_HOST1_80}}/docs)
 
 
 <br>
