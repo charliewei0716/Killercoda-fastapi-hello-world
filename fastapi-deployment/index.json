@@ -4,8 +4,7 @@
   "details": {
     "intro": {
       "title": "Intro",
-      "text": "intro/text.md",
-      "foreground": "intro/foreground.sh"
+      "text": "intro/text.md"
     },
     "steps": [
       {
@@ -14,7 +13,7 @@
     ],
     "assets": {
       "host01": [
-        {"file": "fastapi-hello-world/**/*.*", "target": "/fastapi-hello-world"}
+        {"file": "fastapi-hello-world/**/*.*", "target": "~/fastapi-hello-world"}
       ]
     },
     "finish": {
