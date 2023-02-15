@@ -69,16 +69,37 @@ docker run --help
 <br>
 
 
-例如你可以直接執行以下代碼，使用上述建立的 Docker image 創建為 container，設定 container 於背景執行並綁定本機與 container 端口
+例如你可以直接執行以下代碼，使用上述建立的 Docker image 創建名為 fastapi-helloworld 的 container，設定 container 於背景執行並綁定本機與 container 端口
 
 ```bash
-docker run -d -p 80:80 fastapi-helloworld:v1
+docker run --name fastapi-helloworld -d -p 80:80 fastapi-helloworld:v1
 ```{{exec}}
 
 
 <br>
 
-完成後即可使用以下連結訪問使用 Docker 佈署的 FastAPI
 
-[訪問 FastAPI UI]({{TRAFFIC_HOST1_80}})
+並使用以下指令查看正在運行的 container
+
+```bash
+docker container ls
+```{{exec}}
+
+
+<br>
+
+
+即可透過連結訪問使用 Docker 佈署的 FastAPI
+
+[訪問 FastAPI UI]({{TRAFFIC_HOST1_80/docs}})
+
+
+<br>
+
+
+確認佈署成功後，可以使用 `docker container rm`{{}} 指令移除 container。因為在下一步中只會使用到 image
+
+```bash
+docker container rm fastapi-helloworld -f
+```{{exec}}
 
