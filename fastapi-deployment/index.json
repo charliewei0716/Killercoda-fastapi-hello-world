@@ -12,6 +12,11 @@
         "text": "step1/text.md"
       }
     ],
+    "assets": {
+      "host01": [
+        {"file": "fastapi-hello-world/**/*.*", "target": "/fastapi-hello-world"}
+      ]
+    },
     "finish": {
       "text": "finish/text.md"
     }
