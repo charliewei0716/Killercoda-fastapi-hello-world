@@ -15,9 +15,10 @@
 
 1. 查看 FastAPI 範例代碼，其中包含可直接執行的 Dockerfile
 2. 使用 `docker build`{{}} 指令建構 Docker image，與 `docker run`{{}} 測試 image
-3. 建立 Kubernetes Namespace
-4. (編輯中) Kubernetes Deployment
-5. (編輯中) Kubernetes Service
+3. 建立地端的 Registry Server，模擬 `docker push`{{}} 流程，並提供 Kubernetes 拉取 image
+4. 建立 Kubernetes Namespace
+5. (編輯中) Kubernetes Deployment
+6. (編輯中) Kubernetes Service
 
 
 <br>
