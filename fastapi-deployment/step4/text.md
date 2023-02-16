@@ -50,19 +50,19 @@ spec:
 <br>
 
 
-使用 `kuberctl apply`{{}} 指令由  `deployment.yaml`{{}} 建立此 Deployment，
+使用 `kuberctl apply`{{}} 指令由  `deployment.yaml`{{}} 將 Deployment 建立於 fastapi Namespace
 
 ```
-kubectl apply -f deployment.yaml
+kubectl apply -f deployment.yaml -n fastapi
 ```{{exec}}
 
 
 <br>
 
 
-使用 `kuberctl get`{{}} 指令查看建立的 Deployment
+使用 `kuberctl get`{{}} 指令查看 fastapi 中的 Deployment
 ```
-kubectl get deployment
+kubectl get deployment -n fastapi
 ```{{exec}}
 
 
