@@ -11,7 +11,8 @@
         "text": "step1/text.md"
       },
       {
-        "text": "step2/text.md"
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
       }
     ],
     "assets": {
