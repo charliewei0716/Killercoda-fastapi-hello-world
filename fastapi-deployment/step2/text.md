@@ -25,7 +25,7 @@ docker run -d -p 5000:5000 --restart=always --name registry registry:2
 <br>
 
 
-## 推送 image
+## 推送 image 到 Registry
 
 首先使用 `docker tag`{{}} 指令重新標記建構完成的 image
 
