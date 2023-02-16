@@ -16,8 +16,12 @@
         "verify": "step2/verify.sh"
       },
       {
-        "title": "Kubernetes Deployment",
+        "title": "Local Registry Server",
         "text": "step3/text.md"
+      },
+      {
+        "title": "Kubernetes Deployment",
+        "text": "step4/text.md"
       }
     ],
     "assets": {
