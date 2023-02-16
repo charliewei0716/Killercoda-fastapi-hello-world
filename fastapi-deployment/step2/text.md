@@ -14,11 +14,11 @@ cd k8s_yaml/
 <br>
 
 
-## Kubernetes Namespace
+## 創建 Namespace
 
 為了方便管理，通常會將相關的 Kubernetes 元件放入相同的 Namespace 中，本課程中也將遵照這個慣例。使用以下命令建立 `namespace.yaml`{{}} ：
 
-```plain
+```text
 touch namespace.yaml
 ls
 ```{{exec}}
@@ -42,7 +42,7 @@ metadata:
 
 使用 `kuberctl apply`{{}} 指令由  `namespace.yaml`{{}} 建立名為 fastapi 的 Namespace
 
-```
+```text
 kubectl apply -f namespace.yaml
 ```{{exec}}
 
@@ -50,8 +50,10 @@ kubectl apply -f namespace.yaml
 <br>
 
 
-使用 `kuberctl get`{{}} 指令查看建立的 Namespace
-```
+## 檢驗
+
+使用 `kuberctl get`{{}} 指令查看是否存在名為 fastapi 的 Namespace
+```text
 kubectl get namespace
 ```{{exec}}
 
