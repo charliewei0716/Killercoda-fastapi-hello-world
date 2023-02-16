@@ -5,7 +5,10 @@
 
 ## 介紹
 
-演示透過 Dockerfile 建構一個 FastAPI 的 Docker image，並編寫 Deployment 與 Service 等 Kubernetes 元件公開佈署 API
+對於 FastAPI 框架，演示透過 Dockerfile 建構其 Docker image，並編寫 Deployment 與 Service 等 Kubernetes 元件完成 API 佈署
+
+
+<br>
 
 
 <br>
