@@ -14,6 +14,10 @@
         "title": "Kubernetes Namespace",
         "text": "step2/text.md",
         "verify": "step2/verify.sh"
+      },
+      {
+        "title": "Kubernetes Deployment",
+        "text": "step3/text.md"
       }
     ],
     "assets": {
