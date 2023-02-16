@@ -23,6 +23,10 @@
       {
         "title": "Kubernetes Deployment",
         "text": "step4/text.md"
+      },
+      {
+        "title": "Kubernetes Service",
+        "text": "step5/text.md"
       }
     ],
     "assets": {
