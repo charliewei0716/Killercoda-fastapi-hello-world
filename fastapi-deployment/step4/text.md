@@ -60,6 +60,8 @@ kubectl apply -f deployment.yaml -n fastapi
 <br>
 
 
+## 驗證
+
 使用 `kuberctl get`{{}} 指令查看 fastapi 中的 Deployment
 ```
 kubectl get deployment -n fastapi
