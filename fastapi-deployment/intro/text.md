@@ -26,7 +26,7 @@
 
 查看 FastAPI 範例代碼：
 
-```
+```text
 cd fastapi-hello-world/
 ls
 ```{{exec}}
