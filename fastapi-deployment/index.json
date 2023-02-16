@@ -8,16 +8,17 @@
     },
     "steps": [
       {
+        "title": "Dockerize FastAPI",
         "text": "step1/text.md"
       },
       {
-        "title": "Kubernetes Namespace",
-        "text": "step2/text.md",
-        "verify": "step2/verify.sh"
+        "title": "Private Registry Server",
+        "text": "step2/text.md"
       },
       {
-        "title": "Local Registry Server",
-        "text": "step3/text.md"
+        "title": "Kubernetes Namespace",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
       },
       {
         "title": "Kubernetes Deployment",
