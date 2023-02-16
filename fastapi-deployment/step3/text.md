@@ -3,61 +3,39 @@
 <br>
 
 
-## 創建 Deployment
+此步驟將使用 Docker 官方提供的 Registry image 建構位於地端的私人 Registry Server, 其目的有以下
+1. 模擬使用 `docker push`{{}} 指令推送建構完成的 image 而不用註冊或登入 Docker Hub
+2. 供後續 Kubernetes 拉取 image，且一樣不需經由 Docker Hub
 
-Kubernetes Deployment 提供宣告式的方法，描述 Pod 中使用的 image、副本數、生命週期與更新方式。使用以下命令建立 `deployment.yaml`{{}} ：
+
+## 佈署 Registry Server
+
+執行以下指令啟動 Registry container:
 
 ```plain
-touch deployment.yaml
-ls
+docker run -d -p 5000:5000 --restart=always --name registry registry:2
+```{{exec}}
+
+此 Registry container 將背景執行於地端的 5000 端口，現在可以開始使用 Registry 了
+
+
+<br>
+
+
+## 推送 image
+
+首先使用 `docker tag`{{}} 指令重新標記建構完成的 image
+
+```plain
+docker tag fastapi-helloworld:v1 localhost:5000/fastapi-helloworld:v1
+```{{exec}}
+
+使用 `docker push`{{}} 指令上傳標記後的 image
+
+```plain
+docker push localhost:5000/fastapi-helloworld:v1
 ```{{exec}}
 
 
 <br>
 
-
-進入編輯環境並於 `deployment.yaml`{{}} 編寫以下內容後存檔：
-
-```yaml{2,6,9,13,17}
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: fastapi-deployment
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: fastapi
-  template:
-    metadata:
-      labels:
-        app: fastapi
-    spec:
-      containers:
-      - name: fastapi-helloworld
-        image: fastapi-helloworld:v1
-        ports:
-        - containerPort: 80
-```{{copy}}
-
-
-<br>
-
-
-使用 `kuberctl apply`{{}} 指令由  `deployment.yaml`{{}} 建立名為 fastapi-deployment 的 Deployment，
-
-```
-kubectl apply -f deployment.yaml
-```{{exec}}
-
-
-<br>
-
-
-使用 `kuberctl get`{{}} 指令查看建立的 Deployment
-```
-kubectl get deployment
-```{{exec}}
-
-
-<br>
