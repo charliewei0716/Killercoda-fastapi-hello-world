@@ -47,7 +47,7 @@ docker push localhost:5000/fastapi-helloworld:v1
 
 使用以下連結查看 Registry 中所有的 image，當然現在只會有 fastapi-helloworld image
 
-[{{TRAFFIC_HOST1_80}}/v2/_catalog]({{TRAFFIC_HOST1_80}}/v2/_catalog)
+[{{TRAFFIC_HOST1_5000}}/v2/_catalog]({{TRAFFIC_HOST1_5000}}/v2/_catalog)
 
 
 <br>
