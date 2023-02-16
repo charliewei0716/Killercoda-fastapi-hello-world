@@ -35,7 +35,7 @@ spec:
     spec:
       containers:
       - name: fastapi-helloworld
-        image: fastapi-helloworld:v1
+        image: localhost:5000/fastapi-helloworld:v1
         ports:
         - containerPort: 80
 ```{{copy}}
