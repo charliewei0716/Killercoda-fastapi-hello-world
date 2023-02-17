@@ -18,7 +18,7 @@ ls
 
 進入編輯環境並於 `service.yaml`{{}} 編寫以下內容後存檔：
 
-```yaml{2,7,11}
+```yaml{2,7,12}
 apiVersion: v1
 kind: Service
 metadata:
@@ -26,10 +26,11 @@ metadata:
 spec:
   selector:
     app: fastapi
+  type: NodePort
   ports:
   - port: 80
     targetPort: 80
-  type: NodePort
+    nodePort: 30666
 ```{{copy}}
 
 
@@ -62,5 +63,8 @@ kubectl apply -f service.yaml -n fastapi
 kubectl get svc -n fastapi
 ```{{exec}}
 
+[大功告成 !!]({{TRAFFIC_HOST1_30666}}/docs)
+
 
 <br>
+
