@@ -1,3 +1,10 @@
 #!/bin/bash
 
-[ $(docker ps --filter "name=^/registry$" --format '{{.Names}}') == registry ]
+result=$( docker inspect -f {{.State.Running}} registry)
+
+if [ $result == "true" ]
+then
+  exit 0
+else
+  exit 1
+fi
