@@ -4,7 +4,8 @@
   "details": {
     "intro": {
       "title": "Intro",
-      "text": "intro/text.md"
+      "text": "intro/text.md",
+      "verify": "intro/verify.sh"
     },
     "steps": [
       {
