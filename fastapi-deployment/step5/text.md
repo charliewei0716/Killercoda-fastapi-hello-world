@@ -63,7 +63,7 @@ kubectl apply -f service.yaml -n fastapi
 kubectl get svc -n fastapi
 ```{{exec}}
 
-[大功告成 !!]({{TRAFFIC_HOST1_30666}}/docs)
+點擊 → [大功告成 !!]({{TRAFFIC_HOST1_30666}}/docs)
 
 
 <br>
