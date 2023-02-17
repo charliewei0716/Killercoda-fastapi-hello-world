@@ -1,4 +1,4 @@
-
+![k8s Deployment](./k8s-deployment.png)
 
 <br>
 
