@@ -10,7 +10,7 @@
       {
         "title": "Dockerize FastAPI",
         "text": "step1/text.md",
-        "background": "step1/background.sh"
+        "verify": "step1/verify.sh"
       },
       {
         "title": "Private Registry Server",
