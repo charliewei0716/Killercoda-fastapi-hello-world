@@ -30,7 +30,7 @@
 <br>
 
 
-查看 FastAPI 範例代碼：
+請先移動至 fastapi-hello-world 目錄，查看 FastAPI 範例代碼：
 
 ```text
 cd fastapi-hello-world/
