@@ -4,13 +4,13 @@
   "details": {
     "intro": {
       "title": "Intro",
-      "text": "intro/text.md",
-      "verify": "intro/verify.sh"
+      "text": "intro/text.md"
     },
     "steps": [
       {
         "title": "Dockerize FastAPI",
-        "text": "step1/text.md"
+        "text": "step1/text.md",
+        "background": "step1/background.sh"
       },
       {
         "title": "Private Registry Server",
