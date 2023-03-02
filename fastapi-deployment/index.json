@@ -25,11 +25,13 @@
       },
       {
         "title": "Kubernetes Deployment",
-        "text": "step4/text.md"
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
       },
       {
         "title": "Kubernetes Service",
-        "text": "step5/text.md"
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
       }
     ],
     "assets": {
