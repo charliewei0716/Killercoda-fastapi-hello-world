@@ -100,7 +100,7 @@ kubectl get pod -n fastapi
 使用 Deployment 創建的 Pod 具有 {Deployment_name}-XXX-XXX 的命名格式；記下任一個 Pod 的名稱，替換並執行以下指令：
 
 ```
-kubectl delete pod {Deployment_name} -n fastapi
+kubectl delete pod {Pod_name} -n fastapi
 ```{{copy}}
 
 再次使用 `kubectl get`{{}} 指令查看 Pod 的變化：
