@@ -1,0 +1,15 @@
+{
+  "title": "Kubernetes 個人練習",
+  "description": "",
+  "details": {
+    "intro": {
+      "title": "Intro",
+      "text": "intro/text.md",
+      "foreground": "intro/foreground.sh"
+    },
+    "steps": []
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
