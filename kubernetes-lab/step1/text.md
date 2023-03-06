@@ -13,16 +13,70 @@
 <br>
 
 
-使用超連結查看 Nginx 初始頁面
+使用[超連結]({{TRAFFIC_HOST1_30666}})查看 Nginx 初始頁面
 
 
-<details><summary>提示</summary>
+<details><summary>Deployment 提示</summary>
 
 
 <br>
 
 
-123
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  replicas: ???
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: ???
+        ports:
+        - containerPort: 80
+```
+
+
+<br>
+
+
+</details>
+
+
+<br>
+
+
+<details><summary>Service 提示</summary>
+
+
+<br>
+
+
+```yaml{12}
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+spec:
+  selector:
+    app: nginx
+  type: NodePort
+  ports:
+  - port: 80
+    targetPort: 80
+    nodePort: ???
+```
+
+
+<br>
 
 
 </details>
