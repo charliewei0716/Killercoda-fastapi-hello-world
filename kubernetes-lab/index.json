@@ -2,12 +2,12 @@
   "title": "Kubernetes 個人練習",
   "description": "",
   "details": {
-    "intro": {
-      "title": "Intro",
-      "text": "intro/text.md",
-      "foreground": "intro/foreground.sh"
-    },
-    "steps": []
+    "steps": [
+      {
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ]
   },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node"
