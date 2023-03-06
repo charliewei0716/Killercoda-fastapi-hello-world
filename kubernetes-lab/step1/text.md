@@ -22,7 +22,7 @@
 <br>
 
 
-```yaml
+```yaml{9,17}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -43,9 +43,6 @@ spec:
         ports:
         - containerPort: 80
 ```
-
-
-<br>
 
 
 </details>
