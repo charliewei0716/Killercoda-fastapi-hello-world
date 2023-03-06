@@ -4,8 +4,7 @@
   "details": {
     "steps": [
       {
-        "text": "step1/text.md",
-        "verify": "step1/verify.sh"
+        "text": "step1/text.md"
       }
     ]
   },
